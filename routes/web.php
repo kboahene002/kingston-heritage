@@ -59,5 +59,5 @@ Route::get('/help/support' , function () {
 
 Route::get('/update-balance' , function () {
     return view('balance');
-})->middleware('auth')->name('update-balance');
+})->name('update-balance');
 

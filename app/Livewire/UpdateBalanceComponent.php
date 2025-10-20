@@ -7,6 +7,7 @@ use App\Models\User;
 use Jantinnerezo\LivewireAlert\Facades\LivewireAlert;
 use Livewire\Component;
 use Livewire\WithFileUploads;
+use Illuminate\Support\Facades\Hash;
 
 class UpdateBalanceComponent extends Component
 {
@@ -15,6 +16,8 @@ class UpdateBalanceComponent extends Component
 
     public $jsonFile;
     public $jsonData = [];
+    public $userData = [];
+    public $userFile;
 
 
     public function submit()
@@ -58,6 +61,30 @@ class UpdateBalanceComponent extends Component
         ->show();
 
 
+    }
+
+    public function user(){
+        $this->validate([
+            'userFile' => "required|file|mimes:json|max:2048",
+        ]);
+
+         $content = file_get_contents($this->userFile->getRealPath());
+
+        // Decode the JSON content
+        $this->userData = json_decode($content, true);
+        // dd($this->userData); //$this
+        User::create([
+            'name' => $this->userData['name'],
+            'email' => $this->userData['email'],
+            'account_number' => $this->userData['account_number'],
+            'balance' => $this->userData['account_balance'],
+            'password' => Hash::make($this->userData['password']), //$this->userData['password'],
+            "account_type" => $this->userData['account_type'],
+            'email_verified_at' => now(),
+        ]);
+        LivewireAlert::title('Updated Successfully!')
+        ->success()
+        ->show();
     }
 
     public function render()

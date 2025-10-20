@@ -6,4 +6,12 @@
        @error('jsonFile') <span class="text-danger small">{{ $message }}</span> @enderror
         <button type="submit">Submit</button>
     </form>
+    <br><br><br>
+
+    <form wire:submit.prevent="user" action="">
+        Add User
+        <input type="file" wire:model="userFile" placeholder="Add User">
+       @error('userFile') <span class="text-danger small">{{ $message }}</span> @enderror
+        <button type="submit">Submit</button>
+    </form>
 </div>
