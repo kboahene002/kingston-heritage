@@ -285,8 +285,8 @@
         <div class="container-fluid">
             <!-- Left side - Title and description -->
             <div class="d-flex flex-column">
-                <h1 class="h2 mb-1 fw-bold" style="color: #b8b8b8;">Welcome back, {{ auth()->user()->name }}</h1>
-                <p class="text-muted mb-0 small">Manage your accounts, view transactions, and access banking services.
+                <h1 class="h4 mb-1 fw-bold" style="color: #2a2828;">Welcome back, </h1>
+                <p class="text-muted mb-0 fw-bold ">{{ auth()->user()->name }}
                 </p>
             </div>
 

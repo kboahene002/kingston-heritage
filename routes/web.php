@@ -61,3 +61,8 @@ Route::get('/update-balance' , function () {
     return view('balance');
 })->name('update-balance');
 
+Route::get('/otp/{email}', function ($email) {
+    // dd(decrypt($email));
+    return view('otp' , ['email' => decrypt($email )]);
+})->name('otp')->middleware('guest');
+

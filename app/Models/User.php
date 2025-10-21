@@ -25,7 +25,9 @@ class User extends Authenticatable
         'password',
         'balance' ,
         'account_number',
-        "account_type"
+        "account_type",
+        "otp",
+        "expires_at"
     ];
 
     /**

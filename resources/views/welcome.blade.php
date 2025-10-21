@@ -1379,7 +1379,7 @@
     <!-- End App Area -->
 
     <!-- Start Footer Area -->
-    <div class="footer-area two bg-color-0c3a30 pt-120">
+    <div class="footer-area two  bg bg-dark pt-120">
       <div class="container">
         <div class="newsletter pb-120">
           <div class="row align-items-center">
@@ -1396,8 +1396,8 @@
         <div class="row" data-cues="slideInUp" data-duration="800">
           <div class="col-xl-4 col-md-6">
             <div class="footer-weight part-one">
-              <a href="index.html" class="footer-logo d-block">
-                <img src="assets/images/white-logo.png" alt="image">
+              <a href="/" class="footer-logo d-block">
+                <img src="{{ asset('logo.png') }}" alt="image">
               </a>
               <p class="text-white">Our mission is to deliver privacy, performance and personalized service to ultra-high-net-worth clients. and modern technology and seamless financial services.</p>
               {{-- <ul class="social">
