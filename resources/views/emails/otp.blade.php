@@ -186,22 +186,10 @@
                                                                                                         <tbody>
                                                                                                             <tr>
                                                                                                                 <td
-
                                                                                                                     style="width: 180px ; font-weight:500 ; font-size: 34px;">
-                                                                                                                    HERITAGE BANK
-                                                                                                                    {{-- <img alt="LogoIpsum"
-                                                                                                                        src="https://i.imghippo.com/files/xZkvY1724649505.png"
-                                                                                                                        style=" --}}
-                                                                border: 0;
-                                                                display: block;
-                                                                outline: none;
-                                                                text-decoration: none;
-                                                                height: auto;
-                                                                width: 100%;
-                                                                font-size: 13px;
-                                                              "
-                                                                                                                        width="180"
-                                                                                                                        height="auto" />
+                                                                                                                    HERITAGE
+                                                                                                                    BANK
+
                                                                                                                 </td>
                                                                                                             </tr>
                                                                                                         </tbody>
@@ -226,13 +214,15 @@
                                                       ">
                                                                                                         <h1
                                                                                                             style="margin: 16px 0px">
-                                                                                                            Here's your one time password
+                                                                                                            Here's your
+                                                                                                            one time
+                                                                                                            password
 
                                                                                                         </h1>
                                                                                                         <p>
                                                                                                             Use this
                                                                                                             code to
-                                                                                                             complete
+                                                                                                            complete
                                                                                                             login.
                                                                                                         </p>
                                                                                                     </div>

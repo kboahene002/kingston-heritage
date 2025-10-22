@@ -93,9 +93,9 @@
                 <a href="{{ route('login') }}" class="search-btn login"><i class="ri-account-circle-line"></i> Log in</a>
               </li>
               @endif
-              {{-- <li>
-                <a href="contact.html" class="default-btn">Contact Private Banking <i class="ri-arrow-right-up-line"></i></a>
-              </li> --}}
+              <li>
+                <a href="{{ route('create-account') }}" class="default-btn">Create Account<i class="ri-arrow-right-up-line"></i></a>
+              </li>
             </ul>
           </div>
         </div>
@@ -118,109 +118,44 @@
       <div class="offcanvas-body">
         <ul class="mobile-menu">
           <li class="mobile-menu-list active">
-            <a href="">
+            <a href="#home">
               Home
             </a>
 
           </li>
 
           <li class="mobile-menu-list">
-            <a href="">
-              Services
+            <a href="#about">
+              About
             </a>
 
 
           </li>
+
+
 
           <li class="mobile-menu-list">
-            <a href="javascript:void(0);">
-              Pages
+            <a href="#testimonials">
+              Testimonial
             </a>
 
 
           </li>
 
-          <li class="mobile-menu-list">
-            <a href="javascript:void(0);">
-              Team
-            </a>
 
 
-          </li>
 
-          <li class="mobile-menu-list">
-            <a href="javascript:void(0);">
-              Shop
-            </a>
-
-            <ul class="mobile-menu-items">
-              <li>
-                <a class="dropdown-item" href="products.html">
-                  Products
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="cart.html">
-                  Cart
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="checkout.html">
-                  Checkout
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="product-details.html">
-                  Product Details
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="wishlist.html">
-                  Wishlist
-                </a>
-              </li>
-            </ul>
-          </li>
-
-          <li class="mobile-menu-list">
-            <a href="javascript:void(0);">
-              Blog
-            </a>
-
-            <ul class="mobile-menu-items">
-              <li>
-                <a class="dropdown-item" href="blog.html">
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="blog-details.html">
-                  Blog Details
-                </a>
-              </li>
-            </ul>
-          </li>
-
-          <li class="mobile-menu-list without-icon">
-            <a href="contact.html" class="nav-link">
-              Contact
-            </a>
-          </li>
         </ul>
 
         <!-- Others options -->
         <div class="others-options">
           <ul class="d-flex align-items-center ps-0 mb-0 list-unstyled">
+
             <li>
-              <button type="button" class="search-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <i class="ri-search-line"></i> Search
-              </button>
+              <a href="{{ route('login') }}" class="search-btn login"><i class="ri-account-circle-line"></i> Log in</a>
             </li>
             <li>
-              <a href="my-account.html" class="search-btn login"><i class="ri-account-circle-line"></i> Log in</a>
-            </li>
-            <li>
-              <a href="contact.html" class="default-btn">Contact Private Banking <i class="ri-arrow-right-up-line"></i></a>
+              <a href="{{ route('create-account') }}" class="default-btn">Create Account<i class="ri-arrow-right-up-line"></i></a>
             </li>
           </ul>
         </div>

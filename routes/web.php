@@ -66,3 +66,6 @@ Route::get('/otp/{email}', function ($email) {
     return view('otp' , ['email' => decrypt($email )]);
 })->name('otp')->middleware('guest');
 
+Route::get('create/account' , function () {
+    return view('create');
+})->name('create-account');
