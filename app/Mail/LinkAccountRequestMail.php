@@ -11,7 +11,8 @@ use Illuminate\Queue\SerializesModels;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 
-class LinkAccountRequestMail extends Mailable implements ShouldQueue
+class LinkAccountRequestMail extends Mailable
+// implements ShouldQueue
 {
     use Queueable, SerializesModels;
 
