@@ -43,7 +43,7 @@
       <!-- Start Navbar Area -->
       <nav class="navbar main-navbar navbar-expand-lg bg-color-ffffff" id="navbar">
         <div class="container-fluid side-padding position-relative">
-          <a class="navbar-brand logo-brand p-0" href="index.html">
+          <a class="navbar-brand logo-brand p-0" href="/">
             <img style="width: 100px; height:100px;" src="{{ asset('logo.png') }}" alt="image">
           </a>
           <a class="navbar-toggler" data-bs-toggle="offcanvas" href="#navbarOffcanvas" role="button"
@@ -94,7 +94,7 @@
               </li>
               @endif
               <li>
-                <a href="{{ route('create-account') }}" class="default-btn">Create Account<i class="ri-arrow-right-up-line"></i></a>
+                <a href="#create-account" class="default-btn">Create Account<i class="ri-arrow-right-up-line"></i></a>
               </li>
             </ul>
           </div>
@@ -106,7 +106,7 @@
     <!-- Start Mobile Navbar Area -->
     <div class="mobile-navbar offcanvas offcanvas-end border-0" data-bs-backdrop="static" tabindex="-1" id="navbarOffcanvas">
       <div class="offcanvas-header">
-        <a href="index.html" class="logo d-inline-block">
+        <a href="/" class="logo d-inline-block">
           <img src="assets/images/white-logo.png" alt="logo">
         </a>
 
@@ -747,6 +747,17 @@
       </div>
     </div>
     <!-- End Works Area -->
+
+     <!-- Start Pricing Plan Area -->
+    <div id="create-account" class="pricing-area ptb-120">
+      <div class="container">
+         <div class="section-title">
+          <span class="sub-title two bg-color-9edd05 rounded-pill">Account Creation</span>
+          <h2>Create an account with us today</h2>
+        </div>
+        <livewire:create-component />
+      </div>
+      </div>
 
     <!-- Start Pricing Plan Area -->
     <div class="pricing-area ptb-120">

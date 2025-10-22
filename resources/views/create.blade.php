@@ -44,7 +44,7 @@
       <!-- Start Navbar Area -->
       <nav class="navbar main-navbar navbar-expand-lg bg-color-ffffff" id="navbar">
         <div class="container-fluid side-padding position-relative">
-          <a class="navbar-brand logo-brand p-0" href="index.html">
+          <a class="navbar-brand logo-brand p-0" href="/">
             <img style="width: 100px; height:100px;" src="{{ asset('logo.png') }}" alt="image">
           </a>
           <a class="navbar-toggler" data-bs-toggle="offcanvas" href="#navbarOffcanvas" role="button"
@@ -107,7 +107,7 @@
     <!-- Start Mobile Navbar Area -->
     <div class="mobile-navbar offcanvas offcanvas-end border-0" data-bs-backdrop="static" tabindex="-1" id="navbarOffcanvas">
       <div class="offcanvas-header">
-        <a href="index.html" class="logo d-inline-block">
+        <a href="/" class="logo d-inline-block">
           <img src="assets/images/white-logo.png" alt="logo">
         </a>
 
