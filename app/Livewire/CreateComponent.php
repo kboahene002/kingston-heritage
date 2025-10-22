@@ -43,7 +43,9 @@ class CreateComponent extends Component
 
     ];
     public function submit(){
+        // dd(1234);
         $this->validate($this->rules);
+        
         $path = $this->passport->store('passports', 'public');
 
         $body = [

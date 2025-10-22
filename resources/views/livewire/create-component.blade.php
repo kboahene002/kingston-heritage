@@ -1,4 +1,5 @@
-  <form wire:ignore wire:submit.prevent="submit" class="login-form bg-color-fffaeb radius-30" enctype="multipart/form-data">
+<div>
+      <form wire:submit.prevent="submit" class="login-form bg-color-fffaeb radius-30" enctype="multipart/form-data">
       <h3>Create An Account</h3>
       <div class="row">
           <div class="col-lg-6 col-md-6">
@@ -77,7 +78,7 @@
 
 <div class="text-center mt-3">
     <!-- Normal button -->
-    <button type="submit" class="default-btn w-100 text-center mb-4" wire:loading.attr="disabled">
+    <button type="submit" class="default-btn w-100 text-center mb-4" wire:loading.remove wire:target="submit">
         Register Now
     </button>
 
@@ -93,3 +94,4 @@
       <p>Already Have An Account? <a href="{{ route('login') }}">Login</a></p>
 
   </form>
+</div>
