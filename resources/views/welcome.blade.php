@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/css/remixicon.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- Title & Favicon -->
     <title>Kensington Heritage Bank — Private Offshore & Digital Banking</title>

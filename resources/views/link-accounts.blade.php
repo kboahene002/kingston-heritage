@@ -285,8 +285,8 @@
         <div class="container-fluid">
             <!-- Left side - Title and description -->
             <div class="d-flex flex-column">
-                <h1 class="h2 mb-1 fw-bold" style="color: #b8b8b8;">Welcome back, {{ auth()->user()->name }}</h1>
-                <p class="text-muted mb-0 small">Manage your accounts, view transactions, and access banking services.
+                <h1 class="h4 mb-1 fw-bold" style="color: #2a2828;">Welcome back, </h1>
+                <p class="text-muted mb-0 fw-bold ">{{ auth()->user()->name }}
                 </p>
             </div>
 
@@ -294,10 +294,18 @@
             <div class="d-flex align-items-center gap-3">
                 <!-- Search Box -->
 
+
+                <!-- Notifications -->
+                {{-- <div class="position-relative">
+                    <button class="btn btn-link text-dark p-2">
+                        <i class="bi bi-bell fs-5"></i>
+                    </button>
+                    <span class="notification-badge">3</span>
+                </div> --}}
+
                 <!-- Profile -->
                 <div class="d-flex align-items-center gap-2">
-                                        <i class="bi bi-person-circle fs-1 text-secondary"></i>
-
+                    <i class="bi bi-person-circle fs-1 text-secondary"></i>
                     {{-- <i class="bi bi-chevron-down text-muted"></i> --}}
                 </div>
             </div>

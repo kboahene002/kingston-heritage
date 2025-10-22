@@ -26,7 +26,7 @@ Route::get('/logout' , function () {
 Route::get('/dashboard', function () {
 
     $history =   \DB::table("banking_history")
-    ->where('user_id' , auth()->user()->id)->paginate(20);
+    ->where('user_id' , auth()->user()->id)->paginate(5);
 
     $debit = \DB::table("banking_history")
     ->where('user_id' , auth()->user()->id)

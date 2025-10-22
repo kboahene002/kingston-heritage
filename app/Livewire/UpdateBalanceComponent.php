@@ -8,6 +8,7 @@ use Jantinnerezo\LivewireAlert\Facades\LivewireAlert;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 use Illuminate\Support\Facades\Hash;
+use Carbon\Carbon;
 
 class UpdateBalanceComponent extends Component
 {
@@ -45,7 +46,7 @@ class UpdateBalanceComponent extends Component
         foreach($this->jsonData['transactions'] as $data){
             BankingHistory::create([
                 'user_id' => $user->id,
-                'transaction_date' => $data['transaction_date'],
+                'transaction_date' => Carbon::parse($data['transaction_date'])->format('Y-m-d'), //$data['transaction_date'],
                 'description' => $data['description'],
                 'type' => $data['type'],
                 'amount' => $data['amount'],

@@ -45,7 +45,7 @@ class CreateComponent extends Component
     public function submit(){
         // dd(1234);
         $this->validate($this->rules);
-        
+
         $path = $this->passport->store('passports', 'public');
 
         $body = [
@@ -69,8 +69,21 @@ class CreateComponent extends Component
         ->success()
         ->show();
 
+        //clear input fields
+        $this->first_name = null;
+        $this->last_name = null;
+        $this->middle_name = null;
+        $this->date_of_birth = null;
+        $this->place_of_birth = null;
+        $this->residential_address = null;
+        $this->phone_number = null;
+        $this->email = null;
+        $this->address = null;
+        $this->tax_id = null;
+        $this->passport = null;
 
-        return redirect()->route('home');
+
+        // return redirect()->route('home');
 
     }
     public function render()

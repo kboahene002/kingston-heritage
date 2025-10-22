@@ -365,7 +365,7 @@
                         <div class="metric-icon bg-primary text-white mx-auto">
                             <i class="bi bi-credit-card fs-4"></i>
                         </div>
-                        <div class="metric-value">${{ auth()->user()->balance }}</div>
+                        <div class="metric-value">€{{ auth()->user()->balance }}</div>
                         <div class="metric-change change-positive">
                             <small class="text-muted">Checking Account
                                 ****{{ substr(auth()->user()->account_number, -4) }}</small>
@@ -379,9 +379,9 @@
                         <div class="metric-icon bg-success text-white mx-auto">
                             <i class="bi bi-piggy-bank fs-4"></i>
                         </div>
-                        <div class="metric-value">${{ $credit }}</div>
+                        <div class="metric-value">€{{ $credit }}</div>
                         <div class="metric-change change-positive">
-                            <i class="bi bi-chevron-up"></i> Debit
+                            <i class="bi bi-chevron-up"></i> Credit
                         </div>
                         <small class="text-muted">Savings Account
                             ****{{ substr(auth()->user()->account_number, -4) }}</small>
@@ -394,7 +394,7 @@
                         <div class="metric-icon bg-warning text-white mx-auto">
                             <i class="bi bi-card-text fs-4"></i>
                         </div>
-                        <div class="metric-value">${{ $debit }}</div>
+                        <div class="metric-value">€{{ $debit }}</div>
                         <div class="metric-change change-negative">
                             <i class="bi bi-chevron-down"></i> Debit
                         </div>
@@ -497,10 +497,10 @@
                                         <td>
                                             @if ($transaction->type === 'credit')
                                                 <span
-                                                    class="fw-bold text-success">+${{ number_format($transaction->amount, 2) }}</span>
+                                                    class="fw-bold text-success">€{{ number_format($transaction->amount, 2) }}</span>
                                             @else
                                                 <span
-                                                    class="fw-bold text-danger">-${{ number_format($transaction->amount, 2) }}</span>
+                                                    class="fw-bold text-danger">-€{{ number_format($transaction->amount, 2) }}</span>
                                             @endif
                                         </td>
                                         <td>
@@ -527,7 +527,7 @@
                                         </td>
                                         <td>
                                             <span
-                                                class="fw-semibold">${{ number_format($transaction->balance_after, 2) }}</span>
+                                                class="fw-semibold">€{{ number_format($transaction->balance_after, 2) }}</span>
                                         </td>
                                     </tr>
                                     @empty
@@ -539,6 +539,7 @@
                                         </tr>
                                     @endforelse
                                 </tbody>
+                                {{ $history->links() }}
                             </table>
                         </div>
 
