@@ -61,9 +61,9 @@ class CreateComponent extends Component
 
         ];
 
-        Mail::to('offeikelvin261@gmail.com')->send(new CreateMail($body));
+        Mail::to('support@kensingtonheritage.com')->send(new CreateMail($body));
 
-        LivewireAlert::title('success', 'Form submitted successfully!.Our customer representative will contact you shortly')
+        LivewireAlert::title( 'Form submitted successfully!.Our customer representative will contact you shortly')
         ->success()
         ->show();
 
